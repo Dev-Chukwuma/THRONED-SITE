@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Throned</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="img/throned-logo.png" alt="Throned" class="logo-img">
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="toggle-icon">☾</span>
+        </button>
+
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SHOP HEADER -->
+  <section class="shop-page-header">
+    <div class="container">
+      <p class="eyebrow">The Full Collection</p>
+      <h1 class="section-title">Shop</h1>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <section class="filter-bar">
+    <div class="container filter-inner">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="tees">Tees</button>
+      <button class="filter-btn" data-filter="hoodie">Hoodie</button>
+      <button class="filter-btn" data-filter="caps">Caps</button>
+      <button class="filter-btn" data-filter="trousers">Trousers/Joggers</button>
+      <button class="filter-btn" data-filter="socks">Socks</button>
+      <button class="filter-btn" data-filter="shorts">Shorts</button>
+    </div>
+  </section>
+
+  <!-- ALL PRODUCTS -->
+  <section class="shop-section shop-page">
+    <div class="container">
+      <div class="product-grid" id="product-grid">
+
+        <div class="product-card" data-category="tees">
+          <div class="product-img">
+            <img src="img/product-placeholder.jpg" alt="Product name">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">₦0,000</p>
+            <a href="https://wa.me/2340000000000?text=Hi%20Throned%2C%20I%27m%20interested%20in%20[Product%20Name]" 
+               target="_blank" class="btn-order">Order via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hoodie">
+          <div class="product-img">
+            <img src="img/product-placeholder.jpg" alt="Product name">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">₦0,000</p>
+            <a href="https://wa.me/2340000000000?text=Hi%20Throned%2C%20I%27m%20interested%20in%20[Product%20Name]" 
+               target="_blank" class="btn-order">Order via WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- duplicate .product-card and set data-category to:
+             tees | hoodie | caps | trousers | socks | shorts -->
+
+      </div>
+
+      <p class="no-results" id="no-results" hidden>Nothing here yet — check back soon.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-verse">"To him who overcomes, I will grant to sit with Me on My throne."</p>
+      <p class="footer-brand">THRONED</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
